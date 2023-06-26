@@ -1,0 +1,212 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+:root {
+    --main-color: rgb(10, 128, 52);
+    --second-color: rgb(6, 95, 38);
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--main-color);
+    --bs-btn-border-color: var(--main-color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--second-color);
+    --bs-btn-hover-border-color: var(--second-color);
+    --bs-btn-focus-shadow-rgb: 10, 128, 52;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--second-color);
+    --bs-btn-active-border-color: var(--second-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 11px; // 50 для круга, 11 для квадрата
+}
+
+.greyColor {
+    color: rgb(152, 152, 152);
+}
+
+.dialogueButton {
+    border-radius: 12px;
+    width: 98%;
+    font-size: 14px;
+    --bs-btn-padding-x: 0rem;
+    --bs-btn-padding-y: 0rem;
+    --bs-btn-bg: rgb(83 85 84 / 16%);
+    --bs-btn-hover-bg: rgb(83 85 84 / 60%);
+    --bs-btn-border-color: rgb(83 85 84 / 0%);
+    --bs-btn-hover-border-color: rgb(83 85 84 / 0%);
+}
+
+.userWithoutDialogue {
+    border-radius: 12px;
+    width: 31%;
+    font-size: 14px;
+    --bs-btn-padding-x: 0rem;
+    --bs-btn-padding-y: 0rem;
+    --bs-btn-bg: rgb(83 85 84 / 16%);
+    --bs-btn-hover-bg: rgb(83 85 84 / 60%);
+    --bs-btn-border-color: rgb(83 85 84 / 0%);
+    --bs-btn-hover-border-color: rgb(83 85 84 / 0%);
+}
+
+.dialogueBlock {
+    display: flex;
+}
+
+.dialogueItem {
+    margin-right: 10px;
+    text-align: -webkit-auto;
+    vertical-align: middle;
+}
+
+.dialogueNotification {
+    margin-top: 26px;
+    margin-left: -13px;
+    position: absolute;
+ }
+
+.typeDivBase {
+    position: absolute;
+    width: 30%;
+    top: 86%;
+}
+
+.typeDiv {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    background-color: #292a2da1;
+    border-radius: 70px;
+}
+
+.dateBase {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 70px;
+}
+
+.date {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(41, 42, 45);
+    border-radius: 70px;
+}
+
+.searchSection{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: rgb(41, 42, 45);
+    padding: 10px;
+    border-radius: 11px;
+}
+
+.searchForm {
+    width: 245px;
+    margin-right: 5px;
+}
+
+.form1 {
+    display:flex;
+}
+
+.button1 {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+
+.dialogs {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+}
+
+.dialogs-left {
+    height: auto;
+    width: fit-content;
+    border-radius: 15px 0 0 15px;
+    border-right: 2px solid rgb(84, 84, 84);
+}
+
+.dialogs-right {
+    padding: 0 10px;
+    width: 100%;
+    height: 90vh;
+    border-radius: 0 15px 15px 0;
+}
+
+.allMessages {
+    position: relative;
+    overflow-y: scroll;
+    height: 77vh;
+}
+
+.messageBlock p {
+    margin: 3px;
+    white-space: pre-line;
+}
+
+.messageBlock {
+    padding: 18px;
+    width: fit-content;
+    margin: 10px;
+    border-radius: 10px;
+    word-break: break-all;
+}
+
+.companion.messageBlock {
+    background-color: rgb(32, 32, 32);
+}
+
+.our.messageBlock {
+    background-color: rgba(30, 215, 95, 0.192);
+    margin-left: auto;
+}
+
+.messageAdditional {
+    padding: 3px;
+    font-size: 10px;
+}
+
+.allMessages::-webkit-scrollbar {
+    width: 5px;               /* ширина scrollbar */
+}
+
+.allMessages::-webkit-scrollbar-track {
+    background: none;        /* цвет дорожки */
+}
+
+.allMessages::-webkit-scrollbar-thumb {
+    background-color: rgb(84, 84, 84);    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+}
+
+.submitMessageContainer {
+    position: relative;
+    height: 8%;
+    width: 100%;
+    top: 10px;
+}
